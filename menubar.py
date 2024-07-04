@@ -22,6 +22,12 @@ class MenuClass(QMainWindow):
         edit_menu_action = edit_menu.addAction('Undo')
         edit_menu_action = edit_menu.addAction('Redo')
         
+        
+        file_menu = menu_bar.addMenu("Window")
+        file_menu = menu_bar.addMenu("Setting")
+        file_menu = menu_bar.addMenu("Help")
+        file_menu = menu_bar.addMenu("Faras")
+        
     @Slot()
     def exit_application_slot(self):
         print('app exit')
